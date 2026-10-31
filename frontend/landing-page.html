@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Café do Bairro | Cafés e Encomendas</title>
+        <meta name="author" content ="Alan Cunha">
+        <meta name="description" content="Conheça o Café do Bairro e confira nossas opções de cafés, bebidas e encomendas na região de Itabuna e Ilhéus.">
+        <meta name="keywords" content="Café, loja, delivery, loja de café, bebidas quentes">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+
+        <link rel="icon" href="assets/images/icons/cafe-icon.png">
+        
+    </head>
+    <body>
+
+        <header>
+            <a href="#inicio" class="logo">
+                Café do Bairro
+            </a>
+
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <a href="#cardapio">Cardápio</a>  |
+                    <a href="#sobre">Sobre</a>  |
+                    <a href="#funcionamento">Funcionamento</a>  |
+                    <a href="#localizacao">Localização</a>  |
+                    <a href="#encomendas">Encomendas</a>  
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="inicio" class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="hero-tag">
+                            CAFÉS • BOLOS CASEIROS
+                        </span>
+
+                        <h1>
+                            Um pedaço de carinho em cada fatia.
+                        </h1>
+
+                        <p>
+                            Café passado na hora, pão de queijo quentinho e bolos caseiros preparados com carinho
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="#cardapio" class="btn-primary">
+                                Conheça o nosso cardápio<br>
+                            </a>
+                            
+                            <a href="#sobre" class="btn-secondary">
+                                Conheça mais sobre Café do Bairro!<br>
+                            </a>
+
+                            <a href="#funcionamento" class="btn-tertiary">
+                                Saiba nossos horários de funcionamento!<br>
+                            </a>
+
+                            <a href="#localizacao" class="btn-fourth">
+                                Conheça nossa localização!<br>
+                            </a>
+
+                            <a href="#encomendas" class="btn-fifth">
+                                Faça sua encomenda!<br>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-image">
+                        <img src="assets/images/hero-cake.png" alt="Bolo caseiro de chocolate servido com café">
+                    </div>
+                
+                </div>
+            </section>
+
+            <section id="cardapio">
+                <h2>Nosso Cardápio</h2>
+
+                <div class="produto">
+                    <img src="assets/images/bolo-chocolate.jpeg" alt="Bolo de chocolate com fatia ao lado">
+                    <h3>Bolo de Chocolate</h3>
+                    <p>Carro chefe da casa com cobertura de chocolate</p>
+                </div>
+
+                <div class="produto">
+                    <img src="assets/images/bolo-fuba.jpeg" alt="Bolo de fubá com fatia ao lado">
+                    <h3>Bolo de Fubá</h3>
+                    <p>Receita Tradicional de dar água na boca</p>
+                </div>
+
+                <div class="produto">
+                    <img src="assets/images/bolo-milho.jpeg" alt="Bolo de milho com fatia ao lado">
+                    <h3>Bolo de Milho</h3>
+                    <p>Bolo feito de milho verde. Fofinho e saboroso</p>
+                </div>
+
+                <div class="produto">
+                    <img src="assets/images/bolo-laranja.png" alt="Bolo de laranja com fatia ao lado">
+                    <h3>Bolo de Laranja</h3>
+                    <p>O favorito das vizinhas para o café da tarde</p>
+                </div>
+
+                <div class="produto">
+                    <img src="assets/images/pao-queijo.jpeg" alt="Pães de queijo em um prato">
+                    <h3>Pão de Queijo</h3>
+                    <p>Dispensa comentários</p>
+                </div>
+
+                <div class="produto">
+                    <img src="assets/images/cafe.jpeg" alt="Café preto em xícara de vidro">
+                    <h3>Café</h3>
+                    <p>Nada melhor do que café para dar energia</p>
+                </div>
+            </section>
+
+            <section id="sobre">
+                <h2>Sobre</h2>
+                <div class="sobre-conteudo">
+                    <p>
+                        Há seis anos, o Café do Bairro faz parte da rotina da vizinhança.
+                        Com café passado na hora, pão de queijo quentinho e bolos caseiros
+                        preparados com carinho, buscamos oferecer aquele sabor de casa de vó em cada visita.
+                    </p>
+                </div>
+            </section>
+
+            <section id="funcionamento">
+                <h2>Funcionamento</h2>
+                <div class="funcionamento-conteudo">
+                    <p>"escreva seus dias e horários de funcionamento aqui"</p>
+                </div>
+
+            </section>
+
+            <section id="localizacao">
+                <h2>Localização</h2>
+                <div class="localizacao-conteudo">
+                    <p>"escreva aqui seu endereço"</p>
+                </div>
+            </section>
+
+            <section id="encomendas">
+                <h2>Um bolo para chamar de seu?</h2>
+                <div>
+                    <h3>Escolha seu sabor e faça sua encomenda!</h3>
+
+                    <form id="form-encomenda">
+                        <label for="nome">Seu nome:</label>
+                        <input type="text" id="nome" required>
+
+                        <label for="telefone">Seu telefone:</label>
+                        <input type="tel" id="telefone" required>
+
+                        <label for="produto">Escolha seu bolo:</label>
+                        <select id="produto" required>
+                            <option value="">Selecione um produto</option>
+                            <option value="Bolo de Chocolate">Bolo de Chocolate</option>
+                            <option value="Bolo de Fubá">Bolo de Fubá</option>
+                            <option value="Bolo de Milho">Bolo de Milho</option>
+                            <option value="Bolo de Laranja">Bolo de Laranja</option>
+                        </select>
+
+                        <label for="data">Data de retirada:</label>
+                        <input type="date" id="data" required>
+
+                        <button type="submit">Encomendar pelo WhatsApp</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Café do Bairro. Todos os direitos reservados</p>
+        </footer>
+
+        <!-- Botão do WhatsApp -->
+        <a href="https://wa.me/5511999999999" 
+            class="whatsapp-fixo" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="Fale conosco no WhatsApp">
+            <img src="assets/images/icons/zap.png" alt="Ícone do WhatsApp">
+        </a>
+    </body>
+    
+</html>
