@@ -1,62 +1,84 @@
 # ☕ Café do Bairro
 
-Projeto desenvolvido como parte do processo seletivo da **TecnoJr**.
+Projeto desenvolvido como parte do processo seletivo da **TecnoJr**, com o objetivo de criar uma solução digital para uma cafeteria fictícia.
 
 ## Sobre o projeto
 
-O Café do Bairro é uma cafeteria fictícia utilizada como cenário para este desafio.
+O Café do Bairro é uma cafeteria familiar que recebe encomendas principalmente pelo WhatsApp. O projeto propõe uma solução digital simples para facilitar o acesso dos clientes às informações do estabelecimento e tornar o processo de encomendas mais organizado.
 
-A proposta é desenvolver uma solução digital simples e intuitiva para fortalecer a presença online do estabelecimento, apresentar seus produtos e facilitar o processo de encomendas.
+A aplicação foi pensada considerando a identidade visual acolhedora da cafeteria, priorizando simplicidade, acessibilidade e uma boa experiência em dispositivos móveis.
 
-O projeto considera as necessidades de uma pequena cafeteria que deseja organizar melhor seus pedidos e proporcionar mais praticidade aos clientes.
+## 🎯 Objetivos
 
-## Tecnologias utilizadas
+- Apresentar o cardápio e os produtos da cafeteria.
+- Disponibilizar informações sobre horário de funcionamento e localização.
+- Facilitar o contato e a realização de encomendas.
+- Desenvolver uma API para gerenciamento de pedidos.
 
-### Front-end
+## 🛠️ Tecnologias utilizadas
+
+### Frontend
 - HTML5
 - CSS3
 - JavaScript
 
-### Back-end
-- Planejado para uma próxima etapa.
+### Backend
+- Python
+- FastAPI
+- SQLite (progressão planejada)
 
-## Funcionalidades
+## ✨ Funcionalidades
 
-- [x] Página inicial e apresentação do estabelecimento.
+### Frontend
+
+- [x] Página inicial e apresentação da cafeteria.
 - [x] Exibição do cardápio.
-- [x] Seção sobre a cafeteria.
-- [x] Seções de funcionamento e localização.
-- [x] Layout responsivo para dispositivos móveis.
-- [x] Menu de navegação mobile.
-- [x] Formulário para solicitação de encomendas.
-- [x] Geração de mensagem personalizada para o WhatsApp.
-- [x] Validação básica dos campos e data mínima de retirada.
-- [ ] API para gerenciamento de pedidos.
-- [ ] Registro e consulta de encomendas.
-- [ ] Controle de disponibilidade de até cinco encomendas por dia.
+- [x] Seção sobre o estabelecimento.
+- [x] Informações de funcionamento e localização.
+- [x] Formulário de encomendas.
+- [x] Integração do formulário com WhatsApp.
+- [x] Menu de navegação responsivo.
+- [x] Botão flutuante para contato via WhatsApp.
 
-## Estrutura do projeto
+### Backend
+
+- [x] Configuração do ambiente virtual Python.
+- [x] Instalação e configuração do FastAPI.
+- [x] Inicialização da aplicação.
+- [x] Criação das rotas `GET /` e `GET /sobre`.
+- [ ] Modelagem dos pedidos.
+- [ ] Implementação da rota `POST /pedidos`.
+- [ ] Validação dos dados recebidos.
+- [ ] Persistência dos pedidos em banco de dados. (progessão planejada)
+- [ ] Implementação da regra de limite de cinco encomendas por dia. (progressão planejeda)
+
+## 📂 Estrutura do projeto
 
 ```text
 cafe-do-bairro/
+│
 ├── frontend/
 │   ├── assets/
-│   │   ├── icons/
-│   │   └── images/
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
-├── README.md
-└── .gitignore
+│
+├── backend/
+│   ├── venv/
+│   └── main.py
+│
+├── .gitignore
+└── README.md
 ```
 
-## Observações
+## 🚧 Estado atual
 
-- O formulário utiliza JavaScript para montar uma mensagem e direcionar o cliente ao WhatsApp.
-- O envio da mensagem depende da confirmação do próprio cliente.
-- Como ainda não existe integração com um back-end, os pedidos não são armazenados nem têm sua disponibilidade verificada automaticamente.
-- Os dados de endereço, horário de funcionamento e contato precisam ser confirmados com a responsável pelo estabelecimento.
+O frontend encontra-se desenvolvido, com layout responsivo, apresentação dos produtos e formulário de encomendas integrado ao WhatsApp.
 
-## Status do projeto
+O backend está em desenvolvimento, utilizando Python e FastAPI. Atualmente, possui uma aplicação funcional com rotas iniciais para demonstrar o funcionamento da API.
 
-Front-end desenvolvido. Back-end planejado para uma próxima etapa.
+A integração entre frontend e backend e o armazenamento persistente dos pedidos ainda não foram implementados. Fazem parte de um planejamento de uma possível expansão futura
+
+## 👨‍💻 Autor
+
+Desenvolvido por Alan Gomes como parte do processo seletivo da TecnoJr.
