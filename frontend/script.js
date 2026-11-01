@@ -45,3 +45,26 @@ btnMobile.addEventListener("click", () => {
     const estaAtivo = menuPrincipal.classList.contains("ativo");
     btnMobile.setAttribute("aria-expanded", estaAtivo);
 });
+
+/* ---> COLOQUE AQUI NO FINAL! <--- */
+// Pega todos os links (tags <a>) dentro do menu
+const linksMenu = document.querySelectorAll("#menu-principal a");
+
+// Para cada link clicado, remove a classe 'ativo' do menu principal
+linksMenu.forEach(link => {
+    link.addEventListener("click", () => {
+        menuPrincipal.classList.remove("ativo");
+        btnMobile.setAttribute("aria-expanded", "false"); // Atualiza a acessibilidade
+    });
+});
+
+// Pega todos os links (tags <a>) dentro do menu
+const linksMenu = document.querySelectorAll("#menu-principal a");
+
+// Para cada link clicado, remove a classe 'ativo' do menu principal
+linksMenu.forEach(link => {
+    link.addEventListener("click", () => {
+        menuPrincipal.classList.remove("ativo");
+        btnMobile.setAttribute("aria-expanded", "false"); // Atualiza a acessibilidade
+    });
+});
