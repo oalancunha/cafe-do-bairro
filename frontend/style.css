@@ -68,11 +68,18 @@ nav ul {
     align-items: center;
 }
 
-nav a {
-    text-decoration: none;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Distância entre os itens */
+    align-items: center;
+}
+
+/* Adiciona o " | " depois de cada item da lista, EXCETO o último */
+nav ul li:not(:last-child)::after {
+    content: "|";
     color: var(--canela);
-    font-weight: 600;
-    transition: color 0.3s;
+    margin-left: 15px;
 }
 
 nav a:hover {
