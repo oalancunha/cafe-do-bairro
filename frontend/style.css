@@ -185,7 +185,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.produto, .produtos {
+.produto{
     background-color: transparent; /* Remove a caixa com cor de fundo */
     padding: 0;                    /* Remove o espaço interno */
     text-align: left;              /* Alinha os textos (título e descrição) à esquerda */
@@ -194,7 +194,7 @@ h2 {
     box-shadow: none;              /* Remove a sombra do card */
 }
 
-.produto img, .produtos img {
+.produto img {
     width: 100%;                 /* A imagem ocupa toda a largura do seu espaço */
     height: 250px;               /* Altura fixa para manter todas as imagens alinhadas */
     object-fit: cover;           /* Preenche o espaço sem distorcer ou amassar a foto */
@@ -203,7 +203,7 @@ h2 {
     margin-bottom: 12px;         /* Espaço entre a foto e o título do bolo */
 }
 
-.produto h3, .produtos h3 {
+.produto h3 {
     font-family: var(--fonte-texto); /* Usa a fonte mais limpa para os nomes dos bolos */
     font-size: 1.2rem;
     font-weight: 700;
@@ -211,7 +211,7 @@ h2 {
     margin-bottom: 4px;          /* Espaço pequeno entre título e descrição */
 }
 
-.produto p, .produtos p {
+.produto p {
     font-size: 0.9rem;
     color: var(--canela);
     margin: 0;
@@ -322,7 +322,7 @@ footer {
     }
 
     /* 5. Ajustando o Cardápio para 1 coluna */
-    .produto, .produtos {
+    .produto{
         width: 100%;       /* O item agora ocupa toda a largura disponível */
         min-width: unset;  /* Remove a trava de 300px que colocamos antes */
     }
