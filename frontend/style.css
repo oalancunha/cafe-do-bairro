@@ -23,6 +23,7 @@
 /* 5. Comportamento de rolagem: rolagem suave ao clicar em links */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 140px;
 }
 
 /* 3 e 4. Aparência geral da página: fonte padrão, cor de fundo e cor do texto */
