@@ -1,14 +1,16 @@
 # ☕ Café do Bairro
 
-Projeto desenvolvido como parte do processo seletivo da TecnoJr.
+Projeto desenvolvido como parte do processo seletivo da **TecnoJr**.
 
 ## Sobre o projeto
 
-O Café do Bairro é uma cafeteria fictícia que busca fortalecer sua presença digital e facilitar o contato com seus clientes.
+O Café do Bairro é uma cafeteria fictícia utilizada como cenário para este desafio.
 
-A proposta é desenvolver uma plataforma simples e intuitiva para apresentar os produtos, divulgar informações do estabelecimento e facilitar a realização de encomendas.
+A proposta é desenvolver uma solução digital simples e intuitiva para fortalecer a presença online do estabelecimento, apresentar seus produtos e facilitar o processo de encomendas.
 
-## Tecnologias
+O projeto considera as necessidades de uma pequena cafeteria que deseja organizar melhor seus pedidos e proporcionar mais praticidade aos clientes.
+
+## Tecnologias utilizadas
 
 ### Front-end
 - HTML5
@@ -16,29 +18,45 @@ A proposta é desenvolver uma plataforma simples e intuitiva para apresentar os 
 - JavaScript
 
 ### Back-end
-- Em desenvolvimento
+- Planejado para uma próxima etapa.
 
-## Funcionalidades previstas
+## Funcionalidades
 
-- [x] Página inicial
-- [x] Apresentação do cardápio
-- [x] Seção sobre o estabelecimento
-- [x] Informações de funcionamento e localização
-- [ ] Formulário de encomendas
-- [ ] Integração com o WhatsApp
-- [ ] API para gerenciamento de pedidos
-- [ ] Controle de pedidos por dia
+- [x] Página inicial e apresentação do estabelecimento.
+- [x] Exibição do cardápio.
+- [x] Seção sobre a cafeteria.
+- [x] Seções de funcionamento e localização.
+- [x] Layout responsivo para dispositivos móveis.
+- [x] Menu de navegação mobile.
+- [x] Formulário para solicitação de encomendas.
+- [x] Geração de mensagem personalizada para o WhatsApp.
+- [x] Validação básica dos campos e data mínima de retirada.
+- [ ] API para gerenciamento de pedidos.
+- [ ] Registro e consulta de encomendas.
+- [ ] Controle de disponibilidade de até cinco encomendas por dia.
 
 ## Estrutura do projeto
 
 ```text
 cafe-do-bairro/
 ├── frontend/
-├── backend/
+│   ├── assets/
+│   │   ├── icons/
+│   │   └── images/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
 ├── README.md
 └── .gitignore
 ```
 
-## Status
+## Observações
 
-Projeto em desenvolvimento.
+- O formulário utiliza JavaScript para montar uma mensagem e direcionar o cliente ao WhatsApp.
+- O envio da mensagem depende da confirmação do próprio cliente.
+- Como ainda não existe integração com um back-end, os pedidos não são armazenados nem têm sua disponibilidade verificada automaticamente.
+- Os dados de endereço, horário de funcionamento e contato precisam ser confirmados com a responsável pelo estabelecimento.
+
+## Status do projeto
+
+Front-end desenvolvido. Back-end planejado para uma próxima etapa.
