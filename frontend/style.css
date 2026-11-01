@@ -54,6 +54,16 @@ header {
     box-shadow: 0 2px 10px rgba(73, 50, 38, 0.1);
 }
 
+/* Esconde o botão do menu hambúrguer no desktop */
+#btn-mobile {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--marrom-cafe);
+    cursor: pointer;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
@@ -263,13 +273,40 @@ footer {
         flex-direction: column;
         padding: 15px 20px;
         gap: 15px;
+        /* Adicione isso para o botão ficar alinhado com a logo */
+        flex-direction: row; 
+        justify-content: space-between;
     }
-    
+
+    /* --- ADICIONE/SUBSTITUA ESSA PARTE --- */
+    #btn-mobile {
+        display: block; /* Faz o botão aparecer no celular */
+    }
+
     nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        display: none; /* Esconde o menu por padrão no celular */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Faz o menu aparecer logo abaixo do header */
+        left: 0;
+        width: 100%;
+        background-color: var(--creme);
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        gap: 20px;
     }
+
+    /* Classe que o JavaScript vai "ligar" e "desligar" para mostrar o menu */
+    nav ul.ativo {
+        display: flex;
+    }
+
+    /* Remove a barrinha " | " na versão mobile para ficar mais limpo */
+    nav ul li:not(:last-child)::after {
+        content: "";
+    }
+    /* ------------------------------------- */
 
     /* 2. Reduzindo o espaçamento geral (padding) nas laterais */
     main section {
