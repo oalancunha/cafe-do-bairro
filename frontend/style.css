@@ -74,13 +74,6 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
     gap: 15px; /* Distância entre os itens */
     align-items: center;
 }
@@ -270,7 +263,6 @@ footer {
     
     /* 1. Ajuste do Cabeçalho e Navegação */
     header {
-        flex-direction: column;
         padding: 15px 20px;
         gap: 15px;
         /* Adicione isso para o botão ficar alinhado com a logo */
