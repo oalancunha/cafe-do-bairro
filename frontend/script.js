@@ -33,3 +33,15 @@ const mes = String(amanha.getMonth() + 1).padStart(2, "0");
 const dia = String(amanha.getDate()).padStart(2, "0");
 
 campoData.min = `${ano}-${mes}-${dia}`;
+
+const btnMobile = document.querySelector("#btn-mobile");
+const menuPrincipal = document.querySelector("#menu-principal");
+
+btnMobile.addEventListener("click", () => {
+    // Liga e desliga a classe 'ativo'
+    menuPrincipal.classList.toggle("ativo");
+    
+    // Melhora a acessibilidade informando se o menu está aberto ou não
+    const estaAtivo = menuPrincipal.classList.contains("ativo");
+    btnMobile.setAttribute("aria-expanded", estaAtivo);
+});
