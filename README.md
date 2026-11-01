@@ -64,8 +64,7 @@ cafe-do-bairro/
 │   └── script.js
 │
 ├── backend/
-│   ├── venv/
-│   └── main.py
+│    └── main.py
 │
 ├── .gitignore
 └── README.md
